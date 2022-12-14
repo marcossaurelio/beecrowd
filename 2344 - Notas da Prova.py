@@ -1,18 +1,12 @@
-o = input()
+nota_num = int(input())
 
-soma = 0
-dimen = 12
-m = []
-for i in range(dimen):
-    linha = []
-    for j in range(dimen):
-        x = float(input())
-        if i<j and j<dimen-1-i:
-            soma += x
-        linha.append(x)
-    m.append(linha)
-
-if o == 'S' or o == 's':
-    print(f'{soma:.1f}')
-elif o == 'M' or o == 'm':
-    print(f'{(soma/30):.1f}')
+if (nota_num==0):
+  print("E")
+if (nota_num>=0 and nota_num<=35):
+  print("D")
+if (nota_num>=36 and nota_num<=60):
+  print("C")
+if (nota_num>=61 and nota_num<=85):
+  print("B")
+if (nota_num>=86 and nota_num<=100):
+  print("A")
